@@ -1,4 +1,4 @@
-## 车牌号码键盘
+## 车牌号码键盘 [github]('https://github.com/mervynyang/CarnoKeyboard')
 效果如下：
 
 <img src="http://7xo525.com1.z0.glb.clouddn.com/l1.jpg" width="300" alt="">
@@ -20,6 +20,7 @@
         level2={keyboardText.level2}
         done={::this.done}
     />
+    // 具体用法请见example
 ```
 
 ### props
@@ -59,5 +60,3 @@
     React.PropTypes.func
 ```
 键盘失去焦点的时候执行的回调函数。
-
->具体用法请见example

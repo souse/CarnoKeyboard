@@ -1,6 +1,7 @@
 'use strict';
 
 var webpack = require('webpack');
+var path = require('path')
 
 module.exports = {
     entry: './example/example.js',
@@ -8,6 +9,11 @@ module.exports = {
         path: __dirname,
         filename: 'main.js',
         publicPath: '/assets/'
+    },
+    entry: './src/CarnoKeyboard.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'CarnoKeyboard.min.js',
     },
     module: {
         loaders: [{
