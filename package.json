@@ -1,6 +1,6 @@
 {
   "name": "carno-keyboard",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "手机端车牌号码键盘的react组件",
   "main": "lib/index.js",
   "scripts": {
@@ -34,7 +34,6 @@
     "babel-preset-react-hmre": "^1.0.0",
     "babel-preset-stage-0": "^6.5.0",
     "classnames": "^2.2.5",
-    "cross-env": "^1.0.8",
     "css-loader": "^0.23.1",
     "node-sass": "^3.4.2",
     "react": "^15.2.0",
