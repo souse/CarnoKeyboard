@@ -1,7 +1,11 @@
 import 'babel-polyfill'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CarnoKeyBoard from '../src/CarnoKeyBoard.js'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import CarnoKeyboard from '../lib'
+console.log(CarnoKeyboard)
+
+injectTapEventPlugin()
 
 const keyboardText = {
     level1: '粤京津泸鲁冀云辽黑湘皖新苏浙赣鄂桂甘晋蒙陕吉闽贵青藏川宁琼豫渝台港澳',
@@ -47,7 +51,7 @@ class App extends React.Component {
             <div>
                 <h3>模拟车牌号码键盘</h3>
                 <input type="text" style={styles.input} onClick={::this.triggleBoard} value={this.state.carnum} readOnly />
-                <CarnoKeyBoard
+                <CarnoKeyboard
                     isOpen={this.state.isOpen}
                     onPress={::this.onPress}
                     onBlur={::this.onBlur}

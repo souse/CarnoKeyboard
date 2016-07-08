@@ -1,4 +1,4 @@
-## 车牌号码键盘 [github]('https://github.com/mervynyang/CarnoKeyboard')
+## 车牌号码键盘 [github](https://github.com/mervynyang/CarnoKeyboard)
 效果如下：
 
 <img src="http://7xo525.com1.z0.glb.clouddn.com/l1.jpg" width="300" alt="">
@@ -9,8 +9,20 @@
 ```bash
     npm install carno-keyboard
 ```
+
+
+### Usage
+CarnoKeyboard使用[react-tap-event-plugin](https://github.com/zilverline/react-tap-event-plugin)监听tap事件，确保你在app开始的地方引入。
+
 ```js
-    import CarnoKeyboard from '../src/CarnoKeyboard.js'
+    import injectTapEventPlugin from 'react-tap-event-plugin';
+
+    injectTapEventPlugin();
+```
+
+CarnoKeyboard组件用法
+```
+    import CarnoKeyboard from 'carno-keyboard'
 
     <CarnoKeyboard
         isOpen={this.state.isOpen}

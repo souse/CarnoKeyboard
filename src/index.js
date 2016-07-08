@@ -1,10 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import classnames from 'classnames'
-import injectTapEventPlugin from 'react-tap-event-plugin'
 import styles from './CarnoKeyboard.scss'
 import './font.scss'
 
-injectTapEventPlugin()
  /**
  * [CarnoKeyboard description]
  * @prop  {[bool]} isOpen [keyboard status]
